@@ -1,0 +1,241 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  box-shadow: none
+  &:hover, &:focus
+    text-decoration: none
+    outline: none
+    box-shadow: none
+    color: #5C5858
+
+
+
+.wrapper
+  position: relative
+  padding: 155px 0 0
+
+.container
+  max-width: 1594px
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  outline: none
+  box-shadow: none
+  padding: 0
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn-border
+  border: 2px solid #FFFFFF
+    radius: 25px
+
+.color-white
+  color: #fff
+
+h1
+  font-size: 96px
+  font-weight: 900
+  color: #fff
+
+//header
+header
+  position: absolute
+  width: 100%
+  left: 0
+  top: 57px
+  z-index: 2
+  .btn
+    max-width: 139px
+    width: 100%
+    padding: 0 10px
+    height: 50px
+    margin: 0 107px 0 0
+
+.logo
+  max-width: 139px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.list-language
+  display: flex
+  align-items: center
+  li
+    a
+      color: #fff
+      font-size: 14px
+      text-transform: uppercase
+      &:after
+        content: '|'
+        display: inline-block
+        margin: 0 5px
+    .active
+      font-weight: 900
+    &:last-child
+      a
+        &:after
+          display: none
+
+.phone
+  font-size: 18px
+  font-weight: bold
+  color: #fff
+  margin: 0 20px 0 0
+
+.navbar-toggler
+  padding: 0
+  width: 20px
+  height: 14px
+  display: none
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  margin: 0 0 0 10px
+  outline: none
+  box-shadow: none
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+  span
+    display: block
+    width: 100%
+    background: #fff
+    height: 2px
+
+.nav-link
+  color: #fff
+  font-size: 18px
+  font-weight: bold
+
+.navbar-expand-lg .navbar-nav .nav-link, .navbar
+  padding: 0
+
+.nav-item
+  margin: 0 40px 0 0
+  &:last-child
+    margin: 0
+
+.navbar
+  margin: 0 auto 0 178px
+
+//home
+.home
+  background: linear-gradient(270deg, #BBDE2C 0.76%, #6DC400 100%)
+  overflow: hidden
+  h1
+    margin: 219px 0 162px
+  .container
+    z-index: 1
+    position: relative
+  .btn
+    margin: 0 0 303px
+    max-width: 297px
+    height: 60px
+    border-radius: 30px
+
+.img-bg
+  position: absolute
+  right: 0
+  top: 0
+  max-width: 1424px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+@import "media"
+// Всегда в конце
