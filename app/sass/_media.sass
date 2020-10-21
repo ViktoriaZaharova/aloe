@@ -12,6 +12,12 @@
     right: 0
     font-size: 16px
 
+  .img-product
+    max-width: 900px
+    &:after
+      width: 1100px
+      height: 885px
+
 @media only screen and (max-width : 1480px)
   h1
     font-size: 80px
@@ -26,6 +32,17 @@
 
   .navbar
     margin: 0 auto
+
+  .box-text
+    font-size: 20px
+
+  .img-product
+    right: 0
+    max-width: 800px
+    &:after
+      right: 0
+      width: 975px
+      height: 785px
 
 @media only screen and (max-width : 1340px)
   header .btn
@@ -59,6 +76,14 @@
 
   .img-bg
     max-width: 900px
+
+  .img-product
+    bottom: 0
+    max-width: 650px
+    &:after
+      bottom: 0
+      width: 700px
+      height: 560px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px)
@@ -122,15 +147,54 @@
     font-size: 20px
     margin: 15px 0
 
+  .links-composition
+    margin: 30px 0
+    font-size: 18px
+
+  .box-text
+    font-size: 18px
+
+  .img-product
+    max-width: 400px
+    &:after
+      width: 400px
+      height: 320px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .img-bg
     max-width: 500px
 
+  .home h1
+    margin: 40px 0 30px
+    font-size: 24px
+    span
+      font-size: 30px
+
+  .icon-question
+    width: 20px
+    height: 20px
+    margin: 0 0 0 10px
+
+  .btn .icon-arrow
+    width: 12px
+    margin: 0 10px 0 0
+
+  .product-page
+    padding: 100px 0 150px
 
 @media only screen and (max-width : 575px)
   .home .btn
     max-width: 200px
+
+  .img-product
+    max-width: 280px
+    &:after
+      width: 320px
+      height: 258px
+
+  .btn .icon-arrow
+    margin: 0 10px
 
 @media only screen and (max-width : 480px)
   .logo
@@ -166,9 +230,20 @@
 @media only screen and (max-width : 420px)
   .wrapper
     padding: 70px 0 0
+    height: 100%
 
   h2
     font-size: 24px
+
+  .home h1
+    margin: 10px 0 30px
+
+  .box-text
+    line-height: normal
+    font-size: 16px
+
+  .links-composition
+    margin: 20px 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 340px)
