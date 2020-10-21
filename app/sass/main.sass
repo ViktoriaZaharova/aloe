@@ -73,6 +73,7 @@ body
 
 html, body
   overflow-x: hidden
+  height: 100%
 
 img
   display: block
@@ -99,6 +100,7 @@ a
 .wrapper
   position: relative
   padding: 155px 0 0
+  height: 100%
 
 .container
   max-width: 1594px
@@ -187,12 +189,14 @@ header
   margin: 0 0 0 10px
   outline: none
   box-shadow: none
+  border: none
+    radius: 0
   &:hover, &:focus
     outline: none
     box-shadow: none
   span
     display: block
-    width: 100%
+    width: 18px
     background: #fff
     height: 2px
 
@@ -208,6 +212,9 @@ header
   margin: 0 40px 0 0
   &:last-child
     margin: 0
+
+.nav-item-mobile
+  display: none
 
 .navbar
   margin: 0 auto 0 178px

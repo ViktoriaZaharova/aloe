@@ -48,6 +48,9 @@
   .wrapper
     padding: 100px 0 0
 
+  .img-bg
+    max-width: 900px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px)
   header .btn
@@ -90,11 +93,18 @@
   h1
     font-size: 50px
 
+  .img-bg
+    max-width: 700px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .img-bg
+    max-width: 500px
 
+
+@media only screen and (max-width : 575px)
+  .home .btn
+    max-width: 200px
 
 @media only screen and (max-width : 480px)
   .logo
@@ -111,12 +121,17 @@
 
   .home h1
     margin: 60px 0
+    max-width: 80%
 
   h1
-    font-size: 40px
+    font-size: 30px
 
   .home .btn
-    max-width: 200px
+    max-width: 170px
+
+  .img-bg
+    max-width: 300px
+
 
 
 @media only screen and (max-width : 420px)
@@ -127,8 +142,9 @@
     padding: 70px 0 0
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width : 340px)
+  .img-bg
+    max-width: 250px
 
 
 /* Custom, iPhone Retina */
