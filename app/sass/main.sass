@@ -95,8 +95,6 @@ a
     box-shadow: none
     color: #5C5858
 
-
-
 .wrapper
   position: relative
   padding: 155px 0 0
@@ -124,6 +122,13 @@ a
   border: 2px solid #FFFFFF
     radius: 25px
 
+.btn-border-green
+  border-color: #BBDE2C
+  color: #5C5858
+  &:hover
+    background: #BBDE2C
+    color: #fff
+
 .color-white
   color: #fff
 
@@ -131,6 +136,13 @@ h1
   font-size: 96px
   font-weight: 900
   color: #fff
+
+h2
+  margin: 0 auto 55px
+  text-align: center
+  color: #C1272D
+  font-size: 48px
+  font-weight: 900
 
 //header
 header
@@ -219,6 +231,25 @@ header
 .navbar
   margin: 0 auto 0 178px
 
+.header
+  color: #5C5858
+  .nav-link
+    color: #5C5858
+    &:hover
+      color: #AECF43
+  .phone
+    color: #AECF43
+  .btn-border
+    color: #AECF43
+    border-color: #AECF43
+  .list-language
+    a
+      color: #5C5858
+  .navbar-toggler
+    span
+      background: #5C5858
+
+
 //home
 .home
   background: linear-gradient(270deg, #BBDE2C 0.76%, #6DC400 100%)
@@ -243,6 +274,65 @@ header
   display: flex
   align-items: center
   justify-content: center
+
+//catalog
+.catalog
+  h2
+    margin: 48px auto 55px
+
+.product-card
+  margin: 0 0 160px
+  .btn
+    height: 60px
+    max-width: 139px
+    width: 100%
+    margin: 0 auto
+    border-radius: 30px
+
+.product-card__img
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 30px
+  max-width: 390px
+
+.product-card__title
+  text-align: center
+  max-width: 131px
+  width: 100%
+  color: #6DC400
+  font-size: 24px
+  font-weight: 900
+  margin: 0 auto
+
+.product-card__volume
+  text-align: center
+  margin: 33px auto
+  color: #5C5858
+  font-size: 24px
+
+.link-all
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  color: #6DC400
+  font-size: 18px
+  font-weight: 900
+  max-width: 87px
+  width: 100%
+  position: absolute
+  right: -130px
+  top: 200px
+  .icon-arrow
+    margin: 0 auto 29px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.catalog-row
+  position: relative
+
 
 @import "media"
 // Всегда в конце

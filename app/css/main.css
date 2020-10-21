@@ -148,6 +148,13 @@ a {
   border: 2px solid #FFFFFF;
     border-radius: 25px; }
 
+.btn-border-green {
+  border-color: #BBDE2C;
+  color: #5C5858; }
+  .btn-border-green:hover {
+    background: #BBDE2C;
+    color: #fff; }
+
 .color-white {
   color: #fff; }
 
@@ -155,6 +162,13 @@ h1 {
   font-size: 96px;
   font-weight: 900;
   color: #fff; }
+
+h2 {
+  margin: 0 auto 55px;
+  text-align: center;
+  color: #C1272D;
+  font-size: 48px;
+  font-weight: 900; }
 
 header {
   position: absolute;
@@ -258,6 +272,22 @@ header {
 .navbar {
   margin: 0 auto 0 178px; }
 
+.header {
+  color: #5C5858; }
+  .header .nav-link {
+    color: #5C5858; }
+    .header .nav-link:hover {
+      color: #AECF43; }
+  .header .phone {
+    color: #AECF43; }
+  .header .btn-border {
+    color: #AECF43;
+    border-color: #AECF43; }
+  .header .list-language a {
+    color: #5C5858; }
+  .header .navbar-toggler span {
+    background: #5C5858; }
+
 .home {
   background: -webkit-gradient(linear, right top, left top, color-stop(0.76%, #BBDE2C), to(#6DC400));
   background: linear-gradient(270deg, #BBDE2C 0.76%, #6DC400 100%);
@@ -289,8 +319,92 @@ header {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.catalog h2 {
+  margin: 48px auto 55px; }
+
+.product-card {
+  margin: 0 0 160px; }
+  .product-card .btn {
+    height: 60px;
+    max-width: 139px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px; }
+
+.product-card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 30px;
+  max-width: 390px; }
+
+.product-card__title {
+  text-align: center;
+  max-width: 131px;
+  width: 100%;
+  color: #6DC400;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 auto; }
+
+.product-card__volume {
+  text-align: center;
+  margin: 33px auto;
+  color: #5C5858;
+  font-size: 24px; }
+
+.link-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #6DC400;
+  font-size: 18px;
+  font-weight: 900;
+  max-width: 87px;
+  width: 100%;
+  position: absolute;
+  right: -130px;
+  top: 200px; }
+  .link-all .icon-arrow {
+    margin: 0 auto 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.catalog-row {
+  position: relative; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1850px) {
+  .link-all {
+    right: -20px; } }
+
+@media only screen and (max-width: 1600px) {
+  .link-all {
+    right: 0;
+    font-size: 16px; } }
+
 @media only screen and (max-width: 1480px) {
   h1 {
     font-size: 80px; }
@@ -369,7 +483,19 @@ header {
   h1 {
     font-size: 50px; }
   .img-bg {
-    max-width: 700px; } }
+    max-width: 700px; }
+  .catalog h2 {
+    margin: 30px auto; }
+  h2 {
+    margin: 0 auto 30px;
+    font-size: 40px; }
+  .product-card {
+    margin: 0 0 40px; }
+  .product-card__title {
+    font-size: 20px; }
+  .product-card__volume {
+    font-size: 20px;
+    margin: 15px 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -394,16 +520,18 @@ header {
     max-width: 80%; }
   h1 {
     font-size: 30px; }
+  h2 {
+    font-size: 28px; }
   .home .btn {
     max-width: 170px; }
   .img-bg {
     max-width: 300px; } }
 
 @media only screen and (max-width: 420px) {
-  h1 {
-    font-size: 30px; }
   .wrapper {
-    padding: 70px 0 0; } }
+    padding: 70px 0 0; }
+  h2 {
+    font-size: 24px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 340px) {
