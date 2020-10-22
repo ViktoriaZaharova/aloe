@@ -711,6 +711,106 @@ table {
     height: 40px;
     position: absolute; }
 
+.contacts h1 {
+  margin: 55px 0 51px;
+  font-size: 48px; }
+
+.contacts .phone {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 0 25px; }
+  .contacts .phone:last-child {
+    margin: 0; }
+
+.contacts .btn {
+  margin: 12px 0 19px; }
+
+.mail {
+  color: #fff;
+  margin: 34px 0 50px;
+  font-size: 24px;
+  font-weight: 900; }
+
+.address {
+  margin: 0 0 49px;
+  font-size: 18px;
+  font-weight: bold; }
+  .address span {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 14px 0 0; }
+
+.box-callback {
+  max-width: 297px;
+  width: 100%; }
+  .box-callback h3 {
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .box-callback p {
+    margin: 10px 0 19px;
+    font-size: 14px; }
+
+input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 15px;
+  color: #5C5858;
+  font-size: 14px;
+  font-family: "CoreRhino", sans-serif;
+  background: #fff;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  height: 40px; }
+  input::-webkit-input-placeholder {
+    color: #5C5858; }
+  input::-moz-placeholder {
+    color: #5C5858; }
+  input::-ms-input-placeholder {
+    color: #5C5858; }
+  input::placeholder {
+    color: #5C5858; }
+
+form {
+  width: 100%; }
+  form button, form .btn {
+    margin: 12px 0 17px;
+    border-radius: 30px;
+    height: 67px;
+    width: 100%;
+    color: #fff; }
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 19px; }
+
+.consent {
+  line-height: 11px;
+  font-size: 9px; }
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 43px 0 65px; }
+  .list-social li {
+    margin: 0 20px 0 0; }
+    .list-social li:last-child {
+      margin: 0; }
+
+.map {
+  border-radius: 30px;
+  width: 1136px;
+  height: 893px;
+  overflow: hidden;
+  margin: 90px -28px -109px 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1850px) {
@@ -804,7 +904,13 @@ table {
     font-size: 24px;
     line-height: normal; }
   .stages-development:before {
-    height: calc(100% - 150px); } }
+    height: calc(100% - 150px); }
+  .map {
+    width: 950px;
+    height: 700px;
+    margin: 55px 0 0; }
+  .contacts .phone {
+    font-size: 40px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px) {
@@ -944,7 +1050,28 @@ table {
   table tbody tr td {
     padding: 0 10px; }
   table th {
-    padding: 0 10px 10px; } }
+    padding: 0 10px 10px; }
+  .contacts h1 {
+    font-size: 40px; }
+  .contacts .phone {
+    font-size: 30px;
+    margin: 0 0 15px; }
+  .contacts .mail {
+    margin: 20px 0;
+    font-size: 20px; }
+  .address {
+    font-size: 16px;
+    margin: 0 0 20px; }
+    .address span {
+      font-size: 20px; }
+  .contacts .btn {
+    margin: 12px 0 19px; }
+  .list-social {
+    margin: 20px 0 0; }
+  .map {
+    width: 100%;
+    margin: 40px 0;
+    height: 600px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1016,7 +1143,16 @@ table {
   .home .btn {
     max-width: 170px; }
   .img-bg {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .contacts h1 {
+    margin: 40px 0 30px;
+    font-size: 28px; }
+  .contacts .phone {
+    font-size: 22px; }
+  .contacts .mail {
+    font-size: 18px; }
+  .map {
+    height: 300px; } }
 
 @media only screen and (max-width: 420px) {
   .wrapper {
@@ -1031,7 +1167,9 @@ table {
     line-height: normal;
     font-size: 16px; }
   .links-composition {
-    margin: 20px 0; } }
+    margin: 20px 0; }
+  .contacts {
+    height: auto; } }
 
 @media only screen and (max-width: 340px) {
   .img-bg {
