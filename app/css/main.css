@@ -662,7 +662,7 @@ table {
             transform: translate(-50%, 0);
     background: #AECF43;
     width: 11px;
-    height: 948px;
+    height: calc(100% - 260px);
     position: absolute; }
 
 .stages-development__box {
@@ -762,8 +762,10 @@ table {
     padding: 0; }
   .phone {
     margin: 0 10px 0 0; }
-  h1 {
+  h1, .dealers h1 {
     font-size: 70px; }
+  .dealers h1 {
+    line-height: normal; }
   .nav-item {
     margin: 0 20px 0 0; }
   .navbar-nav {
@@ -788,7 +790,21 @@ table {
     .img-product:after {
       bottom: 0;
       width: 700px;
-      height: 560px; } }
+      height: 560px; }
+  .list-dots {
+    font-size: 18px;
+    line-height: normal; }
+    .list-dots li {
+      margin: 0 0 20px; }
+      .list-dots li:before {
+        top: 0; }
+  .dealers-img {
+    width: 900px; }
+  .stages-development__box .box-text {
+    font-size: 24px;
+    line-height: normal; }
+  .stages-development:before {
+    height: calc(100% - 150px); } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px) {
@@ -828,7 +844,7 @@ table {
   .home .btn {
     margin: 0 0 100px;
     height: 50px; }
-  h1 {
+  h1, .dealers h1 {
     font-size: 50px; }
   .img-bg {
     max-width: 700px; }
@@ -836,6 +852,8 @@ table {
     margin: 30px auto; }
   h2 {
     margin: 0 auto 30px;
+    font-size: 40px; }
+  .stages-development__interval {
     font-size: 40px; }
   .product-card {
     margin: 0 0 40px; }
@@ -880,7 +898,53 @@ table {
     .about-box-one:before {
       left: 0;
       width: 800px;
-      height: 600px; } }
+      height: 600px; }
+  .dealers h1 {
+    margin: 30px 0; }
+  .dealers-img {
+    margin: 30px -20px 0 0;
+    width: auto; }
+  .cooperation {
+    margin: 0; }
+    .cooperation h3 {
+      max-width: none;
+      margin: 0 0 30px;
+      font-size: 40px; }
+  .stages-development {
+    margin: 60px 0 0; }
+    .stages-development:before {
+      display: none; }
+  .stages-development__box {
+    padding: 0 20px 0 0;
+    width: 100%;
+    margin: 0 0 30px; }
+    .stages-development__box:nth-child(even) {
+      margin: 0 0 30px; }
+      .stages-development__box:nth-child(even) .stages-development__interval {
+        padding: 0 0 16px; }
+        .stages-development__box:nth-child(even) .stages-development__interval:after {
+          left: auto;
+          right: -8px; }
+      .stages-development__box:nth-child(even) .box-text {
+        padding: 0; }
+    .stages-development__box .box-text {
+      max-width: none; }
+  .stages-development__interval:before {
+    height: 6px; }
+  .stages-development__interval:after {
+    width: 20px;
+    height: 20px;
+    bottom: -8px;
+    right: -8px; }
+  .price {
+    margin: 40px 0; }
+  table {
+    font-size: 18px;
+    line-height: normal; }
+  table tbody tr td {
+    padding: 0 10px; }
+  table th {
+    padding: 0 10px 10px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -891,6 +955,8 @@ table {
     font-size: 24px; }
     .home h1 span {
       font-size: 30px; }
+  .dealers h1 {
+    font-size: 24px; }
   .icon-question {
     width: 20px;
     height: 20px;
@@ -904,7 +970,13 @@ table {
     width: 300px;
     height: 250px; }
   .about-img {
-    max-height: 300px; } }
+    max-height: 300px; }
+  .stages-development__box .box-text {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 700px) {
+  table {
+    min-width: 800px; } }
 
 @media only screen and (max-width: 575px) {
   .home .btn {
@@ -915,7 +987,15 @@ table {
       width: 320px;
       height: 258px; }
   .btn .icon-arrow {
-    margin: 0 10px; } }
+    margin: 0 10px; }
+  .list-dots {
+    font-size: 16px; }
+    .list-dots li {
+      padding: 0 0 0 20px; }
+      .list-dots li:before {
+        width: 14px;
+        height: 14px;
+        top: 4px; } }
 
 @media only screen and (max-width: 480px) {
   .logo {
@@ -931,7 +1011,7 @@ table {
     max-width: 80%; }
   h1 {
     font-size: 30px; }
-  h2, .about h2 {
+  h2, .about h2, .cooperation h3, .stages-development__interval {
     font-size: 28px; }
   .home .btn {
     max-width: 170px; }
@@ -940,9 +1020,10 @@ table {
 
 @media only screen and (max-width: 420px) {
   .wrapper {
-    padding: 70px 0 0;
+    padding: 70px 0 0; }
+  .home {
     height: 100%; }
-  h2, .about h2 {
+  h2, .about h2, .cooperation h3, .stages-development__interval {
     font-size: 24px; }
   .home h1 {
     margin: 10px 0 30px; }
@@ -952,11 +1033,6 @@ table {
   .links-composition {
     margin: 20px 0; } }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 340px) {
   .img-bg {
     max-width: 250px; } }
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }

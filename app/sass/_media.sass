@@ -64,8 +64,11 @@
   .phone
     margin: 0 10px 0 0
 
-  h1
+  h1, .dealers h1
     font-size: 70px
+
+  .dealers h1
+    line-height: normal
 
   .nav-item
     margin: 0 20px 0 0
@@ -99,6 +102,24 @@
       bottom: 0
       width: 700px
       height: 560px
+
+  .list-dots
+    font-size: 18px
+    line-height: normal
+    li
+      margin: 0 0 20px
+      &:before
+        top: 0
+
+  .dealers-img
+    width: 900px
+
+  .stages-development__box .box-text
+    font-size: 24px
+    line-height: normal
+
+  .stages-development:before
+    height: calc(100% - 150px)
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px)
@@ -139,7 +160,7 @@
     margin: 0 0 100px
     height: 50px
 
-  h1
+  h1, .dealers h1
     font-size: 50px
 
   .img-bg
@@ -150,6 +171,9 @@
 
   h2
     margin: 0 auto 30px
+    font-size: 40px
+
+  .stages-development__interval
     font-size: 40px
 
   .product-card
@@ -212,6 +236,63 @@
       width: 800px
       height: 600px
 
+  .dealers h1
+    margin: 30px 0
+
+  .dealers-img
+    margin: 30px -20px 0 0
+    width: auto
+
+  .cooperation
+    margin: 0
+    h3
+      max-width: none
+      margin: 0 0 30px
+      font-size: 40px
+
+  .stages-development
+    margin: 60px 0 0
+    &:before
+      display: none
+
+  .stages-development__box
+    padding: 0 20px 0 0
+    width: 100%
+    margin: 0 0 30px
+    &:nth-child(even)
+      margin: 0 0 30px
+      .stages-development__interval
+        padding: 0 0 16px
+        &:after
+          left: auto
+          right: -8px
+      .box-text
+        padding: 0
+    .box-text
+      max-width: none
+
+  .stages-development__interval
+    &:before
+      height: 6px
+    &:after
+      width: 20px
+      height: 20px
+      bottom: -8px
+      right: -8px
+
+  .price
+    margin: 40px 0
+
+  table
+    font-size: 18px
+    line-height: normal
+
+  table tbody tr td
+    padding: 0 10px
+
+  table th
+    padding: 0 10px 10px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .img-bg
@@ -222,6 +303,9 @@
     font-size: 24px
     span
       font-size: 30px
+
+  .dealers h1
+    font-size: 24px
 
   .icon-question
     width: 20px
@@ -243,6 +327,15 @@
   .about-img
     max-height: 300px
 
+  .stages-development__box .box-text
+    font-size: 18px
+
+
+
+@media only screen and (max-width : 700px)
+  table
+    min-width: 800px
+
 @media only screen and (max-width : 575px)
   .home .btn
     max-width: 200px
@@ -255,6 +348,15 @@
 
   .btn .icon-arrow
     margin: 0 10px
+
+  .list-dots
+    font-size: 16px
+    li
+      padding: 0 0 0 20px
+      &:before
+        width: 14px
+        height: 14px
+        top: 4px
 
 @media only screen and (max-width : 480px)
   .logo
@@ -276,7 +378,7 @@
   h1
     font-size: 30px
 
-  h2, .about h2
+  h2, .about h2, .cooperation h3, .stages-development__interval
     font-size: 28px
 
   .home .btn
@@ -290,9 +392,11 @@
 @media only screen and (max-width : 420px)
   .wrapper
     padding: 70px 0 0
+
+  .home
     height: 100%
 
-  h2, .about h2
+  h2, .about h2, .cooperation h3, .stages-development__interval
     font-size: 24px
 
   .home h1
@@ -305,17 +409,10 @@
   .links-composition
     margin: 20px 0
 
-/* Extra Small Devices, Phones */
+
 @media only screen and (max-width : 340px)
   .img-bg
     max-width: 250px
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
 
 
 
