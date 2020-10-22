@@ -135,6 +135,14 @@ a
     background: #BBDE2C
     color: #fff
 
+.btn-accent
+  background: linear-gradient(270deg, #BBDE2C 0.76%, #6DC400 100%)
+  border-radius: 30px
+  color: #fff
+  font-size: 18px
+  font-weight: bold
+
+
 .color-white
   color: #fff
 
@@ -454,6 +462,160 @@ header
   margin: 0 0 150px
   h2
     margin: 20px 0 41px
+
+//dealers
+.dealers
+  h1
+    color: #C1272D
+    text-align: left
+    line-height: 94%
+    font-size: 96px
+    margin: 95px 0 104px
+  .btn
+    height: 60px
+    max-width: 297px
+  h3
+    color: #C1272D
+    font-size: 48px
+    font-weight: 900
+    max-width: 480px
+    width: 100%
+    margin: 0 0 37px
+
+.dealers-img
+  width: 1108px
+  margin: 95px 0 0 -20px
+
+.list-dots
+  color: #5C5858
+  font-size: 24px
+  font-weight: 500
+  li
+    position: relative
+    padding: 0 0 0 42px
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 4px
+      width: 22px
+      height: 22px
+      border-radius: 50%
+      background: #AECF43
+
+.cooperation
+  margin: -30px 0 0 130px
+
+.price
+  margin: 89px 0 154px
+  h2
+    text-align: left
+    margin: 0 0 45px
+
+.table-responsive
+  width: 100%
+  overflow-x: auto
+
+table
+  color: #5C5858
+  font-size: 24px
+  font-weight: 500
+  line-height: 30px
+  max-width: 1346px
+  width: 100%
+  td
+    padding: 30px
+  th
+    padding: 0 14px 19px 40px
+    color: #C1272D
+    font-size: 18px
+    line-height: 22px
+    border-right: 3px solid #AECF43
+    &:last-child
+      border: none
+    &:first-child
+      padding-left: 0
+      width: 614px
+  thead
+    border-bottom: 3px solid #AECF43
+  tbody
+    tr
+      td
+        border-right: 3px solid #AECF43
+        padding: 0 14px 19px 40px
+        &:last-child
+          border: none
+        &:first-child
+          padding: 29px 0 0
+
+.stages-development
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  position: relative
+  margin: 108px 0 0
+  &:before
+    content: ''
+    top: 50px
+    left: 50%
+    transform: translate(-50%,0)
+    background: #AECF43
+    width: 11px
+    height: 948px
+    position: absolute
+
+.stages-development__box
+  width: 50%
+  &:nth-child(even)
+    margin: 214px 0 0
+
+    .stages-development__interval
+      padding: 0 0 16px 23px
+      &:after
+        right: auto
+        left: -20px
+    .box-text
+      padding: 0 0 0 23px
+  &:nth-child(4)
+    margin: 250px 0 0
+  .box-text
+    max-width: 614px
+    width: 100%
+    color: #5C5858
+    font-size: 36px
+    line-height: 44px
+
+.stages-development__interval
+  color: #C1272D
+  font-size: 48px
+  font-weight: 900
+  width: 100%
+  position: relative
+  padding: 0 0 16px
+  margin: 0 0 18px
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 11px
+    width: 100%
+    background: #AECF43
+  &:after
+    content: ''
+    background: #AECF43
+    border-radius: 50%
+    right: -20px
+    bottom: -14px
+    width: 40px
+    height: 40px
+    position: absolute
+
+
+
 
 
 @import "media"

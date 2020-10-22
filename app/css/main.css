@@ -173,6 +173,14 @@ a {
     background: #BBDE2C;
     color: #fff; }
 
+.btn-accent {
+  background: -webkit-gradient(linear, right top, left top, color-stop(0.76%, #BBDE2C), to(#6DC400));
+  background: linear-gradient(270deg, #BBDE2C 0.76%, #6DC400 100%);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold; }
+
 .color-white {
   color: #fff; }
 
@@ -548,6 +556,160 @@ header {
   margin: 0 0 150px; }
   .about-box-two h2 {
     margin: 20px 0 41px; }
+
+.dealers h1 {
+  color: #C1272D;
+  text-align: left;
+  line-height: 94%;
+  font-size: 96px;
+  margin: 95px 0 104px; }
+
+.dealers .btn {
+  height: 60px;
+  max-width: 297px; }
+
+.dealers h3 {
+  color: #C1272D;
+  font-size: 48px;
+  font-weight: 900;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 0 37px; }
+
+.dealers-img {
+  width: 1108px;
+  margin: 95px 0 0 -20px; }
+
+.list-dots {
+  color: #5C5858;
+  font-size: 24px;
+  font-weight: 500; }
+  .list-dots li {
+    position: relative;
+    padding: 0 0 0 42px;
+    margin: 0 0 30px; }
+    .list-dots li:last-child {
+      margin: 0; }
+    .list-dots li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #AECF43; }
+
+.cooperation {
+  margin: -30px 0 0 130px; }
+
+.price {
+  margin: 89px 0 154px; }
+  .price h2 {
+    text-align: left;
+    margin: 0 0 45px; }
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto; }
+
+table {
+  color: #5C5858;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  max-width: 1346px;
+  width: 100%; }
+  table td {
+    padding: 30px; }
+  table th {
+    padding: 0 14px 19px 40px;
+    color: #C1272D;
+    font-size: 18px;
+    line-height: 22px;
+    border-right: 3px solid #AECF43; }
+    table th:last-child {
+      border: none; }
+    table th:first-child {
+      padding-left: 0;
+      width: 614px; }
+  table thead {
+    border-bottom: 3px solid #AECF43; }
+  table tbody tr td {
+    border-right: 3px solid #AECF43;
+    padding: 0 14px 19px 40px; }
+    table tbody tr td:last-child {
+      border: none; }
+    table tbody tr td:first-child {
+      padding: 29px 0 0; }
+
+.stages-development {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin: 108px 0 0; }
+  .stages-development:before {
+    content: '';
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background: #AECF43;
+    width: 11px;
+    height: 948px;
+    position: absolute; }
+
+.stages-development__box {
+  width: 50%; }
+  .stages-development__box:nth-child(even) {
+    margin: 214px 0 0; }
+    .stages-development__box:nth-child(even) .stages-development__interval {
+      padding: 0 0 16px 23px; }
+      .stages-development__box:nth-child(even) .stages-development__interval:after {
+        right: auto;
+        left: -20px; }
+    .stages-development__box:nth-child(even) .box-text {
+      padding: 0 0 0 23px; }
+  .stages-development__box:nth-child(4) {
+    margin: 250px 0 0; }
+  .stages-development__box .box-text {
+    max-width: 614px;
+    width: 100%;
+    color: #5C5858;
+    font-size: 36px;
+    line-height: 44px; }
+
+.stages-development__interval {
+  color: #C1272D;
+  font-size: 48px;
+  font-weight: 900;
+  width: 100%;
+  position: relative;
+  padding: 0 0 16px;
+  margin: 0 0 18px; }
+  .stages-development__interval:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 11px;
+    width: 100%;
+    background: #AECF43; }
+  .stages-development__interval:after {
+    content: '';
+    background: #AECF43;
+    border-radius: 50%;
+    right: -20px;
+    bottom: -14px;
+    width: 40px;
+    height: 40px;
+    position: absolute; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
