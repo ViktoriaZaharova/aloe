@@ -98,7 +98,7 @@ a
 .wrapper
   position: relative
   padding: 155px 0 0
-
+  overflow: hidden
 
 .container
   max-width: 1594px
@@ -267,7 +267,6 @@ header
 //home
 .home
   background: linear-gradient(270deg, #BBDE2C 0.76%, #6DC400 100%)
-  overflow: hidden
   color: #fff
   h1
     margin: 219px 0 162px
@@ -350,6 +349,7 @@ header
 
 //product-page
 .product-page
+  color: #fff
   h1
     font-size: 28px
     margin: 141px 0 60px
@@ -411,6 +411,9 @@ header
 
 .bg-orange-gradient
   background: linear-gradient(270deg, #F7E16F 0.76%, #D5681F 100%)
+
+.bg-green-gradient
+  background: linear-gradient(270deg, #BBDE2C 0.76%, #6DC400 100%)
 
 //about
 .about
@@ -705,6 +708,79 @@ label
   overflow: hidden
   margin: 90px -28px -109px 0
 
+
+//modal
+.modal__div
+  position: fixed
+  max-width: 400px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+.modal__wrapper
+  width: 100%
+  height: auto
+  overflow: auto
+  margin: 50px auto
+  padding: 30px 40px
+  box-sizing: border-box
+  position: relative
+  text-align: center
+  color: #fff
+  .btn
+    height: 50px
+  .consent
+    text-align: left
+  .box-text
+    text-align: left
+    font-size: 16px
+    line-height: 1.4
+  h3
+    margin: 0 0 20px
+
+.modal__close
+  position: absolute
+  right: 15px
+  top: 15px
+  color: #fff
+  cursor: pointer
+  width: 16px
+  height: 16px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 9px
+    top: 0
+    width: 2px
+    height: 100%
+    background: #ffffff
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  -moz-opacity: 0.8
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
 
 @import "media"
 // Всегда в конце

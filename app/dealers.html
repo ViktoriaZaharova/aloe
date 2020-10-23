@@ -109,7 +109,7 @@
                     <h3>Заявка
                         на сотрудничество</h3>
 
-                    <a href="#" class="btn btn-accent">Стать диллером</a>
+                    <a href="#dealers__modal" class="btn btn-accent open_modal">Стать диллером</a>
                 </div>
             </div>
 
@@ -222,6 +222,25 @@
         </div>
     </div>
 </section>
+
+<div class="modal__div" id="dealers__modal">
+    <div class="modal__wrapper bg-green-gradient">
+        <div class="modal__close"></div>
+        <div class="box-callback">
+            <h3>Заявка на сотрудничество</h3>
+            <p>оставьте заявку и наши менеджеры перезвонят вам в течении 30 минут</p>
+
+            <form method="post">
+                <label><input type="text" placeholder="Имя" name="name"></label>
+                <label><input type="text" placeholder="Телефон" name="phone" required></label>
+                <button type="submit" class="btn btn-border">оставить заявку</button>
+            </form>
+
+            <div class="consent">нажимая на кнопку вы даете согласие на обработку персональных данных</div>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div><!-- Пoдлoжкa -->
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
